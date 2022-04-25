@@ -65,6 +65,19 @@ document.getElementById("insert").onclick = function () {
 
 };
 
+
+document.getElementById('reset').onclick = () => {
+  readFom();
+  document.getElementById("roll").value = "";
+    document.getElementById("name").value = "";
+    document.getElementById('fatherName').value = "";
+    document.getElementById("gender").value = "";
+    document.getElementById("projecttype").value = "";
+    document.getElementById("phone").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("lastName").value = "";
+}
+
 // document.getElementById("read").onclick = function () {
 //   readFom();
 
