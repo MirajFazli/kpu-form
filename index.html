@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="dr" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kabul Polytechnic University | NE3-1 Registrantion Form</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body >
+    <div class="container">
+      <div class="card card-body">
+        <div class="card-body">
+          <div class="mb-3 row">
+            <div class="col-md-6 text-center">
+              <div class="logo">
+                <img src="./logo.png" alt="logo" width="120" class="text-center">
+              </div>
+            </div>
+            <div class="col-md-6 text-center">
+              <h2 class="card-title pt-2">دانشگاه پولی تخنیک کابل</h2>
+              <h4 class="card-subtitle pt-2">دانشکده شبکه</h4>
+              <h5 class="card-subtitle pt-2">صنف NE-3-1</h5>
+            <h5 class="card-subtitle mt-2">فورم ثبت معلومات محصلین</h5>
+
+            </div>
+            
+          </div>
+          <hr />
+            <div class="row">
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="roll">شماره حاضری</label>
+                  <input
+                    class="form-control"
+                    required
+                    type="text"
+                    size="2"
+                    maxlength="2"
+                    placeholder="00"
+                    name="RollNo"
+                    id="roll"
+                  />
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="roll">اسم محصل</label>
+                  <input
+                    class="form-control"
+                    required
+                    type="text"
+                    name="name"
+                    id="name"
+                  />
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="roll">اسم پدر</label>
+                <input
+                  class="form-control"
+                  required
+                  type="text"
+                  name="fatherName"
+                  id="fatherName"
+                />
+              </div>
+
+              <div class="col-md-3">
+                <label for="roll">تخلص</label>
+                <input
+                  class="form-control"
+                  required
+                  type="text"
+                  name="lastName"
+                  id="lastName"
+                />
+              </div>
+  
+              
+            </div>
+  
+            <div class="row">
+
+              <div class="col-md-3">
+                <label for="gender">جنسیت</label>
+                <select name="gender" id="gender" required class="form-control">
+                  <option hidden>انتخاب یک گذینه</option>
+                  <option value="M">مرد</option>
+                  <option value="F">زن</option>
+                </select>
+              </div>
+
+              <div class="col-md-3">
+                <div class="form-group">
+                  <label for="roll">ادرس الکترونیکی</label>
+                  <input
+                    class="form-control"
+                    required
+                    placeholder="example@domain.com"
+                    type="email"
+                    name="email"
+                    id="email"
+                  />
+                </div>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="gender">نوعیت پروژه</label>
+                <select
+                  required
+                  name="projecttype"
+                  id="projecttype"
+                  class="form-control"
+                >
+                  <option hidden>انتخاب یک گذینه</option>
+                  <option value="Software">طراحی نرم افزار</option>
+                  <option value="Network">طراحی شبکه</option>
+                  <option value="Project">کار در ساحه عملی</option>
+                </select>
+              </div>
+  
+              <div class="col-md-3">
+                <label for="roll">شماره تماس</label>
+                <input
+                  class="form-control"
+                  required
+                  placeholder="070000001"
+                  type="text"
+                  maxlength="10"
+                  size="10"
+                  name="phone"
+                  id="phone"
+                />
+              </div>
+            </div>
+          
+
+        </div>
+
+        <div class="alert alert-warning text-right" role="alert">
+          <h5 class="alert-heading">محصل گرامی!</h5>
+          <hr />
+          <p class="mb-0">
+            در صورت ایجاد شدن مشکل در قسمت ثبت مشخصاتتان با نمایده صنف به تماس
+            شویند!
+          </p>
+          نماینده صنف: محمد شاکر "شمسی"
+          <br />
+          شماره تماس: <a href="tel:+93705823440">0705823440</a>
+        </div>
+        <div class="buttons">
+          <button class="btn btn-success ml-2" id="insert">اضافه کردن</button>
+          <a class="btn btn-default card-link text-primary" href="./views.html">نماش معلومات ثبت شده</a>
+          <!-- <button class="btn btn-primary ml-2" id="read">نمایش معلومات ></button> -->
+          <!-- <button class="btn btn-warning ml-2" id="update">ویرایش</button> -->
+        </div>
+        <div class="copy mt-2 text-center">Design & Developed by 
+          <a href="https://aradev11.netlify.app/" target="blank">aradev11</a>
+        </div>
+
+      </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.4.2/firebase.js"></script>
+
+    <script src="./fireConfig.js"></script>
+
+    <script src="./myscript.js"></script>
+  </body>
+</html>
